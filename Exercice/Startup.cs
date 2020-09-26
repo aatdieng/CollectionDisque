@@ -44,7 +44,7 @@ namespace Exercice
 
             app.UseRouting();
 
-            //app.UseAuthorization();
+            app.UseAuthorization();
 
 
             // Enable middleware to serve generated Swagger as a JSON endpoint.  
@@ -55,13 +55,6 @@ namespace Exercice
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
             });
-
-         //   app.UseEndpoints(endpoints =>
-         //   {
-         //       endpoints.MapControllerRoute(
-         //name: "default",
-         //pattern: "{controller}/{action}/{id?}");
-         //   });
 
             app.UseEndpoints(endpoints =>
             {
